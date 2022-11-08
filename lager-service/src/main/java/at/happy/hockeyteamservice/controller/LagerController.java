@@ -1,15 +1,25 @@
 package at.happy.hockeyteamservice.controller;
 
+import at.happy.hockeyteamservice.dto.ItemResponse;
+import at.happy.hockeyteamservice.service.ItemService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/hockeyteam")
-public class HockeyteamController {
+@RequiredArgsConstructor
+@RequestMapping("/api/lager")
+public class LagerController {
+
+    private final ItemService itemService;
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<InventoryResponse> getHockeyteamByShortName(@RequestParam String teamShort) {
-        return inventoryService.isInStock(skuCode);
+    public ItemResponse getHockeyteamByShortName(@RequestParam String shortName) {
+        return ItemResponse.builder()
+                .shortName(shortName)
+                .isInStock(itemService.isInStock(shortName))
+                .build();
     }
 }
+

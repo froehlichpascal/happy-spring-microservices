@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/happy-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/happy-spring-boot-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/hockey-team-service/pom.xml" />
       </list>
     </option>
   </component>
