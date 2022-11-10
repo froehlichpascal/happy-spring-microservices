@@ -20,6 +20,7 @@
         <module>happy-spring-boot-admin</module>
         <module>lager-service</module>
         <module>bestellung-service</module>
+        <module>happy-dto-share</module>
     </modules>
 
     <properties>

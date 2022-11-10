@@ -14,6 +14,8 @@ public class ItemDataGenerator {
     final ItemRepository itemRepository;
 
     void genarateItems(){
-        itemRepository.save(Item.builder().name("Item 1").shortName("item1").available(2).build());
+        itemRepository.save(Item.builder().name("Hockey Pants").shortName("hockey-pants").available(2).build());
+        itemRepository.save(Item.builder().name("Hockey Gloves").shortName("hockey-gloves").available(1).build());
+        itemRepository.save(Item.builder().name("Hockey Skates").shortName("hockey-skates").available(0).build());
     }
 }

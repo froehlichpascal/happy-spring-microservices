@@ -1,10 +1,12 @@
-package at.happy.hockeyteamservice.dto;
+package at.happy.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
+//TODO Nur ein DTO Response
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,3 +15,4 @@ public class ItemResponse {
     private String shortName;
     private boolean isInStock;
 }
+

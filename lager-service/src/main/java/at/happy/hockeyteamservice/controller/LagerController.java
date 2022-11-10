@@ -1,9 +1,10 @@
 package at.happy.hockeyteamservice.controller;
 
-import at.happy.hockeyteamservice.dto.ItemResponse;
+import at.happy.dto.ItemRequest;
+import at.happy.dto.ItemResponse;
+import at.happy.hockeyteamservice.repository.ItemRepository;
 import at.happy.hockeyteamservice.service.ItemService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,13 +14,18 @@ public class LagerController {
 
     private final ItemService itemService;
 
-    @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public ItemResponse getHockeyteamByShortName(@RequestParam String shortName) {
-        return ItemResponse.builder()
-                .shortName(shortName)
-                .isInStock(itemService.isInStock(shortName))
-                .build();
+    private final ItemRepository itemRepository;
+
+    @PostMapping(value = "in-stock")
+    public ItemResponse getHockeyteamByShortName(@RequestBody ItemRequest itemRequest) {
+
+        var itemToCheck = itemService.getItemByItemShortName(itemRequest.getShortName());
+
+        return itemToCheck != null ?
+                ItemResponse.builder()
+                        .shortName(itemToCheck.getShortName())
+                        .isInStock(itemService.isInStock(itemToCheck))
+                        .build() : null;
     }
 }
 
