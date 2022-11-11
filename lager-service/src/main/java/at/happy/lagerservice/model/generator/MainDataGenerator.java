@@ -1,4 +1,4 @@
-package at.happy.hockeyteamservice.model.generator;
+package at.happy.lagerservice.model.generator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

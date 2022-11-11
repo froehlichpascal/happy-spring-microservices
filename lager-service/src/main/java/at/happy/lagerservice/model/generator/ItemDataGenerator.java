@@ -1,7 +1,7 @@
-package at.happy.hockeyteamservice.model.generator;
+package at.happy.lagerservice.model.generator;
 
-import at.happy.hockeyteamservice.model.Item;
-import at.happy.hockeyteamservice.repository.ItemRepository;
+import at.happy.lagerservice.model.Item;
+import at.happy.lagerservice.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;

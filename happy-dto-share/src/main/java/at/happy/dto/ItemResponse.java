@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-//TODO Nur ein DTO Response
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

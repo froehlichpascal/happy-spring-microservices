@@ -1,7 +1,7 @@
-package at.happy.hockeyteamservice.service;
+package at.happy.lagerservice.service;
 
-import at.happy.hockeyteamservice.model.Item;
-import at.happy.hockeyteamservice.repository.ItemRepository;
+import at.happy.lagerservice.model.Item;
+import at.happy.lagerservice.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

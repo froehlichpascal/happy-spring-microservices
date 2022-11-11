@@ -1,9 +1,9 @@
-package at.happy.hockeyteamservice.controller;
+package at.happy.lagerservice.controller;
 
 import at.happy.dto.ItemRequest;
 import at.happy.dto.ItemResponse;
-import at.happy.hockeyteamservice.repository.ItemRepository;
-import at.happy.hockeyteamservice.service.ItemService;
+import at.happy.lagerservice.repository.ItemRepository;
+import at.happy.lagerservice.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

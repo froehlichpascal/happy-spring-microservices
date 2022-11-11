@@ -1,13 +1,13 @@
-package at.happy.lagerservice;
+package at.happy.happyapigateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HockeyTeamServiceApplicationTests {
+class HappyApiGatewayApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

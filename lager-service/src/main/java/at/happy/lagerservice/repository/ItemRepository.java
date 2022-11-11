@@ -1,6 +1,6 @@
-package at.happy.hockeyteamservice.repository;
+package at.happy.lagerservice.repository;
 
-import at.happy.hockeyteamservice.model.Item;
+import at.happy.lagerservice.model.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package at.happy.hockeyteamservice;
+package at.happy.lagerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -11,6 +11,7 @@
         <module name="happy-spring-boot-admin" />
         <module name="bestellung-service" />
         <module name="happy-dto-share" />
+        <module name="happy-api-gateway" />
         <module name="happy-eureka-server" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bestellung-service" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="happy-api-gateway" options="-parameters" />
       <module name="happy-dto-share" options="-parameters" />
       <module name="happy-eureka-server" options="-parameters" />
       <module name="happy-spring-boot-admin" options="-parameters" />

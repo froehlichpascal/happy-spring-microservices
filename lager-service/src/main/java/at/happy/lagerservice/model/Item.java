@@ -1,4 +1,4 @@
-package at.happy.hockeyteamservice.model;
+package at.happy.lagerservice.model;
 
 
 import lombok.*;

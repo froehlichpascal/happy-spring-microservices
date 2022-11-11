@@ -21,6 +21,7 @@
         <module>lager-service</module>
         <module>bestellung-service</module>
         <module>happy-dto-share</module>
+        <module>happy-api-gateway</module>
     </modules>
 
     <properties>
