@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>at.happy</groupId>
-	<artifactId>bestellung-service</artifactId>
+	<artifactId>happy-bestellung-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bestellung-service</name>
-	<description>bestellung-service</description>
+	<name>happy-bestellung-service</name>
+	<description>happy-bestellung-service</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.4</spring-cloud.version>

@@ -7,10 +7,10 @@
         <groupId>at.happy</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>lager-service</artifactId>
+    <artifactId>happy-lager-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lager-service</name>
-    <description>lager-service</description>
+    <name>happy-lager-service</name>
+    <description>happy-lager-service</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2021.0.4</spring-cloud.version>
