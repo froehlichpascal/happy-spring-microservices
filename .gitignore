@@ -24,6 +24,7 @@ buildNumber.properties
 
 # Generated files
 .idea/**/contentModel.xml
+.idea/sonarlint/
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
@@ -261,3 +262,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+/.idea/sonarlint/issuestore/0/a/0af20420be35568a489e05c9aad2c583becdf4f4
