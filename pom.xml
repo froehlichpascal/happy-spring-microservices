@@ -16,12 +16,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>happy-eureka-server</module>
-        <module>happy-spring-boot-admin</module>
-        <module>happy-lager-service</module>
+        <module>happy-api-gateway</module>
         <module>happy-bestellung-service</module>
         <module>happy-dto-share</module>
-        <module>happy-api-gateway</module>
+        <module>happy-eureka-server</module>
+        <module>happy-lager-service</module>
+        <module>happy-spring-boot-admin</module>
+        <module>happy-verpackung-service</module>
     </modules>
 
     <properties>

@@ -1,0 +1,30 @@
+server:
+  port: 0
+spring:
+  application:
+    name: HAPPY-BESTELLUNG-SERVICE
+  kafka:
+    #properties:
+    #  sasl:
+     #   jaas:
+      #    config: org.apache.kafka.common.security.plain.PlainLoginModule required username=${kafka_username:'admin'} password=${kafka_password:'admin-secret'};
+       # mechanism: PLAIN
+     # security:
+      #  protocol: SASL_PLAINTEXT
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      retries: 2
+      properties:
+        spring:
+          json:
+            trusted:
+              packages=*:
+    topic:
+      name: verpackung-topic
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

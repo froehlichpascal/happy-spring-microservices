@@ -1,0 +1,22 @@
+server:
+  port: 9191
+eureka:
+  instance:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: HAPPY-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: happy-bestellung-service
+          uri: lb://HAPPY-BESTELLUNG-SERVICE
+          predicates:
+            - Path=/api/order/**
+        - id: happy-verpackung-service
+          uri: lb://HAPPY-VERPACKUNG-SERVICE
+          predicates:
+            - Path=/api/packlist/**

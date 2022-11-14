@@ -1,4 +1,4 @@
-package at.happy.bestellungservice;
+package at.happy.happyverpackungservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.kafka.annotation.EnableKafka;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableKafka
-public class HappyBestellungServiceApplication {
+public class HappyVerpackungServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HappyBestellungServiceApplication.class, args);
+		SpringApplication.run(HappyVerpackungServiceApplication.class, args);
 	}
 
 }
